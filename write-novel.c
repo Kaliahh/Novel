@@ -41,7 +41,7 @@ int novelWriter(word *word_list) {
   FILE *fP;
   int i = 1;
   int a, b, c;
-  int WORDS = 50000;
+  int WORDS = 100000;
 
   /* Opens the novel file */
   fP = fopen("novel-files/novel.tex", "w");
@@ -72,7 +72,7 @@ int novelWriter(word *word_list) {
 
   /* Prints words to the .tex file */
   while (i <= WORDS) {
-    a = (rand() % 10) + 10;
+    a = (rand() % 10) + 4;
     b = rand() % 3000;
 
     /* Makes the first letter in the file capitalized */
